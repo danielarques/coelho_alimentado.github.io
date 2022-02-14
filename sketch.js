@@ -65,7 +65,7 @@ function setup()
   if(ismobile){
   canW = displayWidth;
   canH = displayHeight;
-  createCanvas(displayWidth,displayHeight);
+  createCanvas(displayWidth+80,displayHeight);
   }else{
   canW = windowWidth;
   canH = windowHeight;
@@ -135,7 +135,7 @@ function setup()
 function draw() 
 {
   background(51);
-  image(bg_img,0,0,canW,canH);
+  image(bg_img,0,0,displayWidth+80,displayHeight);
 
   push();
   imageMode(CENTER);
